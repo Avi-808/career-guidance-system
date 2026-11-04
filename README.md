@@ -2,6 +2,18 @@
 
 A first usable version of a graduate career guidance web app. It combines an explainable rule-based expert component with TF-IDF text similarity over an included career knowledge base, then presents skill gaps, a learning roadmap, and an assessment dashboard.
 
+## Open the website
+
+This project is a Streamlit website. To run it on your computer, follow the launch steps above. To publish it, open [Streamlit Community Cloud](https://share.streamlit.io/), sign in with GitHub, choose **Create app**, then select:
+
+- Repository: `Avi-808/career-guidance-system`
+- Branch: `main`
+- Main file path: `app.py`
+
+Streamlit will provide the public website URL after deployment. See the [official deployment guide](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) for details.
+
+**Before publishing:** the current app writes assessment details to a SQLite database on the server and displays recent records. That can expose one visitor's records to other visitors. Do not publish this version for public use until per-user data isolation is implemented, or the shared history feature is removed.
+
 ## Requirements and launch
 
 Use Python 3.10 or later. From this folder, create and activate a virtual environment, then install dependencies and launch Streamlit:
